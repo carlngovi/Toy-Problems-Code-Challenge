@@ -17,7 +17,7 @@ function calculateMarks(marks) {
   } //An E is anything below 40
 }
 function gradeMarks() {
-  let marks = prompt("ENTER STUDENTS MARKS!");//This pushes a prompt for the user to input the marks
+  let marks = parseFloat(prompt("ENTER STUDENTS MARKS!"));//This pushes a prompt for the user to input the marks
   if (marks >= 0 && marks <= 100) {
     const grade = calculateMarks(marks);
     console.log("The students grade is " + grade);
